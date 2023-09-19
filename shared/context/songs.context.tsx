@@ -1,8 +1,9 @@
 import { createContext, useReducer, useContext, useMemo } from "react";
+import { ISong } from "../models/song.model";
 
 type ActionTypes = 'saveSongs' | 'saveFavorites' | 'filterList' | 'removeFavorites';
 
-type Action = { type: ActionTypes; payload: any; }
+type Action = { type: ActionTypes; payload: ISong[] | boolean }
 
 type SongsState = { 
   songs: any;
@@ -16,7 +17,7 @@ type Dispatch = (action: Action) => void;
 type SongsProviderProps = { children: React.ReactNode };
 
 const SongsContext = createContext<
-{ songsState: SongsState; dispatch: Dispatch; } | undefined>(undefined);
+{ state: SongsState; dispatch: Dispatch; } | undefined>(undefined);
 
 
 const initialState = {
