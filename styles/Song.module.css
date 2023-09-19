@@ -1,8 +1,13 @@
 @font-face {
-  font-family: 'ArticulatCF';
-  src:
-    url('../public/assets/fonts/ArticulatCF-Normal.otf') format('opentype'),
-    url('../public/assets/fonts/ArticulatCF-Medium.otf') format('opentype');
+  font-family: 'Articulat';
+  src: url('/assets/fonts/ArticulatCF-Medium.otf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Articulat';
+  src: url('/assets/fonts/ArticulatCF-Normal.otf');
+  font-weight: 500;
 }
 
 .container {
@@ -10,7 +15,7 @@
   display: flex;
   flex-direction: column;
   background-color: #000;
-  font-family: 'ArticulatCF', sans-serif;
+  font-family: 'Articulat', sans-serif;
 }
 
 .main {

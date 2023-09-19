@@ -12,7 +12,7 @@ export const Button = styled.button`
   background: rgba(255, 255, 255, 0.15);
   color: #fff;
   border: none;
-  font-family: 'ArticulatCF', sans-serif;
+  font-family: 'Articulat', sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 120%;

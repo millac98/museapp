@@ -97,7 +97,7 @@ export default function Home() {
         body {
           padding: 0;
           margin: 0;
-          font-family: 'Nokora', 'ArticulatCF', sans-serif;
+          font-family: 'Nokora', 'Articulat', sans-serif;
         }
         * {
           box-sizing: border-box;
