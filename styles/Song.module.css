@@ -1,10 +1,8 @@
 @font-face {
   font-family: 'ArticulatCF';
   src:
-      url('../public/assets/fonts/ArticulatCF-Normal.otf') 
-      format('opentype'),
-      url('../public/assets/fonts/ArticulatCF-Medium.otf') 
-      format('opentype');
+    url('../public/assets/fonts/ArticulatCF-Normal.otf') format('opentype'),
+    url('../public/assets/fonts/ArticulatCF-Medium.otf') format('opentype');
 }
 
 .container {
@@ -16,80 +14,50 @@
 }
 
 .main {
-  display: flex; 
-  flex-direction: column; 
-  width: 100%; 
-  max-width: 1200px; 
-  margin: 0 auto;
-
-  @media (max-width: 600px) {
-    padding: 0 16px;
-  }
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
 }
 
-.listPageHeader {
-  display: flex; 
-  justify-content: space-between; 
-  align-items: flex-start; 
-  margin: 40px 0;
-
-  @media (max-width: 600px) {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-}
-
-.headerContent {
-  display: flex; 
+.songDetailsContainer {
+  display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.libraryTitleContainer {
-  margin: 0 0 12px; 
-  display: flex; 
-  gap: 8px;
+.songDetails {
+  margin: 70px 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
 }
 
-.libraryHeading {
-  color: #fff;
-  margin: 0;
-  font-size: 32px;
-  font-weight: medium;
-}
-
-.libraryDescriptionText {
-  color: rgba(255, 255, 255, 0.50); 
-  margin: 0; 
-  font-weight: medium;
-}
-
-.filterContainer {
-  display: flex; 
-  gap: 24px;
+.section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
   @media (max-width: 600px) {
-    flex-direction: column;
-    align-items: center;
+    padding: 0 16px
   }
 }
 
-.listPageBody {
-  display: flex; 
-  margin-top: 40px; 
-  gap: 30px; 
-  flex-wrap: wrap; 
-  margin-bottom: 40px;
-  justify-content: center;
-
-  @media (max-width: 600px) {
-    flex-direction: column;
-    align-items: center;
-  }
+.subtitle {
+  color: rgba(255, 255, 255, 0.70); 
+  margin: 0 0 20px; 
+  font-weight: medium;
 }
 
-.white {
-  color: #fff;
+.cards {
+  display: flex; 
+  gap: 36px; 
+  flex-wrap: wrap;
+
+  @media (max-width: 600px) {
+    justify-content: center;
+  }
 }
 
 .title a {

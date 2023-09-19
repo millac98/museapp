@@ -19,4 +19,5 @@ interface ISongDescription {
 export interface ISong {
   id: number,
   song: ISongDescription,
+  related?: number[],
 }

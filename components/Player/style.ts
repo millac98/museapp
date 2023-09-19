@@ -9,6 +9,7 @@ export const PlayerContainer = styled.section`
 
   @media (max-width: 600px) {
     flex-direction: column;
+    padding: 0 16px;
   }
 `;
 
@@ -31,6 +32,10 @@ export const SongDetails = styled.div`
   align-items: center; 
   gap: 36px;
   margin-bottom: 36px;
+
+  @media (max-width: 600px) {
+    justify-content: center;
+  }
 `;
 
 export const PlayButton = styled.button`

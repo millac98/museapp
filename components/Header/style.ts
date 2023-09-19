@@ -9,7 +9,7 @@ export const Header = styled.header`
   background-color: #1D1D1D;
 
   @media (max-width: 600px) {
-    padding-left: 16px;
+    padding: 29px 16px;
   }
 `;
 

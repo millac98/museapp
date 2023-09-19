@@ -58,23 +58,23 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <HeaderComponent />
-      <main style={{ display: 'flex', flexDirection: 'column', width: '100%', maxWidth: '1200px', margin: '0 auto' }}>
-        <section style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', margin: '40px 0' }}>
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <div style={{ margin: '0 0 12px', display: 'flex', gap: 8 }}>
-              <h2 style={{ color: "#fff", margin: 0, fontSize: 32, fontWeight: 'medium' }}>Your Library</h2>
+      <main className={styles.main}>
+        <section className={styles.listPageHeader}>
+          <div className={styles.headerContent}>
+            <div className={styles.libraryTitleContainer}>
+              <h2 className={styles.libraryHeading}>Your Library</h2>
               <FavoriteComponent />
             </div>
-            <p style={{ color: "rgba(255, 255, 255, 0.50)", margin: 0, fontWeight: 'medium' }}>You have {songs?.length} songs in your library</p>
+            <p className={styles.libraryDescriptionText}>You have {songs?.length} songs in your library</p>
           </div>
-          <div style={{ display: 'flex', gap: 24 }}>
+          <div className={styles.filterContainer}>
             <ToggleComponent />
             <SearchComponent />
           </div>
         </section>
 
         <div>
-          <section style={{ display: 'flex', marginTop: 40, gap: 30, flexWrap: 'wrap', marginBottom: 40 }}>
+          <section className={styles.listPageBody}>
             {songs?.length ? (
               <>
                 {songs?.map((item: ISong) => (
@@ -86,7 +86,7 @@ export default function Home() {
               </>
             )
               : (
-                <p style={{ color: "#fff" }}>Não há músicas no momento.</p>
+                <p className={styles.white}><strong>Não há músicas no momento.</strong></p>
               )}
           </section>
         </div>
