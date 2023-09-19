@@ -1,10 +1,18 @@
+@font-face {
+  font-family: 'ArticulatCF';
+  src:
+      url('../public/assets/fonts/ArticulatCF-Normal.otf') 
+      format('opentype'),
+      url('../public/assets/fonts/ArticulatCF-Medium.otf') 
+      format('opentype');
+}
+
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: #000;
+  font-family: 'ArticulatCF', sans-serif;
 }
 
 .title a {
